@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Friday Night Football backend management app.",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.12.0",
+    "@strapi/plugin-users-permissions": "4.12.0",
+    "@strapi/plugin-i18n": "4.12.0",
+    "better-sqlite3": "8.0.1"
+  },
+  "author": {
+    "name": "Abel Surreira"
+  },
+  "strapi": {
+    "uuid": "5333a5b1-3ff8-48ac-8bd3-4c442afd644b"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

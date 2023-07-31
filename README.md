@@ -18,6 +18,7 @@ The project's main focus is to build an application that helps friends keep trac
 Before setting up the project, ensure you have the following installed:
 
 - Node.js (v16 or higher) and NPM
+- Python (Strapi SQLite database)
 - nx (optional)
 
 ## Instalation Instructions
@@ -62,13 +63,14 @@ Before starting the application, you need to set up the frontend and backend env
 1. Create a `.env` file and set the required environment variables:
    ```bash
    # Sample .env file - Replace these values with your configuration
-   DATABASE_HOST=localhost
-   DATABASE_PORT=5432
-   DATABASE_NAME=friday_night_football
-   DATABASE_USERNAME=myusername
-   DATABASE_PASSWORD=mypassword
+   HOST=0.0.0.0
+   PORT=1337
+   APP_KEYS="toBeModified1,toBeModified2"
+   API_TOKEN_SALT=tobemodified
+   ADMIN_JWT_SECRET=tobemodified
+   JWT_SECRET=tobemodified
    ```
-1. Install Strapi globally (if you haven't already):
+1. Install Strapi globally (if you haven't already, optional):
    ```bash
    npm install -g strapi
    ```
