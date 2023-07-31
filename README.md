@@ -26,15 +26,15 @@ Before setting up the project, ensure you have the following installed:
 To install Friday Night Football project, follow these steps:
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/surreira/friday-night-football
    ```
 1. Change directory to project root:
-   ```bash
+   ```sh
    cd friday-night-football
    ```
 1. Install project dependencies:
-   ```bash
+   ```sh
    npm install
    ```
 
@@ -45,11 +45,11 @@ Before starting the application, you need to set up the frontend and backend env
 ### Astro Frontend
 
 1. Change directory to the frontend app:
-   ```bash
+   ```sh
    cd apps/frontend
    ```
 1. Create a `.env` file and set the required environment variables:
-   ```bash
+   ```sh
    # Sample .env file - Replace these values with your configuration
    STRAPI_API_URL=http://localhost:3000
    ```
@@ -57,11 +57,11 @@ Before starting the application, you need to set up the frontend and backend env
 ### Strapi Backend
 
 1. Change directory to the backend app:
-   ```bash
+   ```sh
    cd apps/backend
    ```
 1. Create a `.env` file and set the required environment variables:
-   ```bash
+   ```sh
    # Sample .env file - Replace these values with your configuration
    HOST=0.0.0.0
    PORT=1337
@@ -71,11 +71,11 @@ Before starting the application, you need to set up the frontend and backend env
    JWT_SECRET=tobemodified
    ```
 1. Install Strapi globally (if you haven't already, optional):
-   ```bash
+   ```sh
    npm install -g strapi
    ```
 1. Install Strapi dependencies:
-   ```bash
+   ```sh
    npm install
    ```
 
@@ -85,7 +85,7 @@ To start the development environment, you will need to run both the frontend and
 
 ### Frontend Development
 
-```bash
+```sh
 cd apps/frontend
 npm run dev
 ```
@@ -94,12 +94,21 @@ The frontend will be accessible at `http://localhost:3000`.
 
 ### Backend Development
 
-```bash
+```sh
 cd apps/backend
 npm run develop
 ```
 
 The Strapi backend will be accessible at `http://localhost:1337`.
+
+When developing the FNF plugin frontend admin UI also use the `watch-admin` command.
+
+```sh
+cd apps/backend
+npm run strapi watch-admin
+```
+
+The live updating app will be accessible at `http://localhost:8000`.
 
 ## Deployment
 

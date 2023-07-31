@@ -20,7 +20,8 @@
     "name": "Abel Surreira"
   },
   "strapi": {
-    "uuid": "5333a5b1-3ff8-48ac-8bd3-4c442afd644b"
+    "uuid": "5333a5b1-3ff8-48ac-8bd3-4c442afd644b",
+    "telemetryDisabled": true
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
